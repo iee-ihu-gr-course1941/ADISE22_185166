@@ -8,7 +8,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield][contributors-url]]
+[![Contributors][contributors-shield]]
 [![GNU License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -57,7 +57,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +91,7 @@ Distributed under the GNU General Public License. See `LICENSE.txt` for more inf
 <!-- CONTACT -->
 ## Contact
 
-dean - [@deanjdevelops](https://twitter.com/your_username) - deanj.development@gmail.com
+dean - [@deanjdevelops](https://twitter.com/deanjdevelops) - deanj.development@gmail.com
 
 Project Link: [https://github.com/iee-ihu-gr-course1941/ADISE22_185166](https://github.com/iee-ihu-gr-course1941/ADISE22_185166)
 
@@ -104,14 +103,12 @@ Project Link: [https://github.com/iee-ihu-gr-course1941/ADISE22_185166](https://
 ## Acknowledgments
 
 * [Img Shields](https://shields.io)
-* [Font Awesome](https://fontawesome.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/iee-ihu-gr-course1941/ADISE22_185166
 [contributors-url]: https://github.com/iee-ihu-gr-course1941/ADISE22_185166/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/iee-ihu-gr-course1941/ADISE22_185166.svg
