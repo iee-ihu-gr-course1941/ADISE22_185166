@@ -44,7 +44,7 @@
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Below you will see a list of the languages I used in order to complete the project.
 
 * ![PHP][php-shield]
 * ![MySQL][sql-shield]
@@ -103,6 +103,7 @@ Project Link: [https://github.com/iee-ihu-gr-course1941/ADISE22_185166](https://
 ## Acknowledgments
 
 * [Img Shields](https://shields.io)
+* [README Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
