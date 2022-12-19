@@ -10,7 +10,7 @@
 ## v0.0.1
 
 ### Added or Changed
-- Added a changelog [19/DEC/2022] :green_circle:
+- Added a changelog *[19/DEC/2022]* :green_circle:
 
 
 ### Removed
