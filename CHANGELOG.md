@@ -1,6 +1,6 @@
 <!-- Changelog Title -->
 # Changelog
-> Newly created elements will be marked with a [![ADD][add-shield]]
+> Newly created elements will be marked with a ![ADD][add-shield]
 
 
 > Changed elements will be marked with a ![CHANGE][change-shield]
@@ -13,8 +13,8 @@
 
 <!-- Feature Additions and Enhancements-->
 ### Added or Changed
-- Added a changelog *[19/DEC/2022]* [add-shield]
-- Enhanced the readme *[19/DEC/2022]* [change-shield]
+- Added a changelog *[19/DEC/2022]* ![ADD][add-shield]
+- Enhanced the readme *[19/DEC/2022]* ![CHANGE][change-shield]
 
 <!-- Feature Removal -->
 ### Removed
