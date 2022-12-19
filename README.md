@@ -8,7 +8,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]]
+[Contributors][contributors-shield]
 [![GNU License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -46,8 +46,8 @@
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![PHP][PHP-shield]][PHP-url]
-* [![MySQL][MySQL-shield][MySQL-url]]
+* [![PHP][PHP-shield]]
+* [MySQL][MySQL-shield]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -116,7 +116,5 @@ Project Link: [https://github.com/iee-ihu-gr-course1941/ADISE22_185166](https://
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/deanjdev
 [PHP-shield]: https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white
-[PHP-url]: https://www.php.net/
-[MySQL-shield]: https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white
-[MySQL-url]: https://www.mysql.com/
+[MySQL-shield]: https://img.shields.io/badge/MySQL-FFF?style=flat&logo=mysql&logoColor=black
 
