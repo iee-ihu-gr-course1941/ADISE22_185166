@@ -1,11 +1,11 @@
 # Changelog
-> Newly created entries will be marked with a green circle emoji :green_circle: next to the entry.
+> Newly created entries will be marked with a :green_circle: (green circle) next to the entry.
 
 
-> Changed entries will be marked with a blue circle emoji :large_blue_circle: next to the entry.
+> Changed entries will be marked with a :large_blue_circle: (blue circle) next to the entry.
 
 
-> Removed entries will be marked with a red circle emoji :red_circle: next to the entry.
+> Removed entries will be marked with a :red_circle: (red circle) next to the entry.
 
 ## v0.0.1
 
