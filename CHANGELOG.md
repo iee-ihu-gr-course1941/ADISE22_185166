@@ -1,12 +1,16 @@
 # Changelog
-> Newly addition will be marked with the color <span style="color:green">GREEN</span> and the word **ADD** will be next to it.
-> Changed entries will be marked with the color <span style="color:blue">BLUE</span> and the word **CHANGE** will be next to it.
-> Remove entries will be marked with the color <span style="color:red">RED</span> and the word **RM** will be next to it.
+> Newly created entries will be marked with a green circle emoji :green_circle: next to the entry.
+
+
+> Changed entries will be marked with a blue circle emoji :blue_circle: next to the entry.
+
+
+> Removed entries will be marked with a red circle emoji :red_circle: next to the entry.
 
 ## v0.0.1
 
 ### Added or Changed
-- Added a changelog [19/DEC/2022] <span style="color:green">**ADD**</span>
+- Added a changelog [19/DEC/2022] :green_circle:
 
 
 ### Removed
