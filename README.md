@@ -113,10 +113,10 @@ Project Link: [https://github.com/iee-ihu-gr-course1941/ADISE22_185166](https://
 [contributors-url]: https://github.com/iee-ihu-gr-course1941/ADISE22_185166/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/iee-ihu-gr-course1941/ADISE22_185166.svg
 [license-url]: https://github.com/iee-ihu-gr-course1941/ADISE22_185166/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/deanjdev
-[PHP-shield]: https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white
+[PHP-shield]: https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white
 [PHP-url]: https://www.php.net/
-[MySQL-shield]: https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white
+[MySQL-shield]: https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white
 [MySQL-url]: https://www.mysql.com/
 
