@@ -46,8 +46,8 @@
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* ![PHP][php-shield][php-url]
-* ![MySQL][sql-shield][sql-url]
+* [![PHP][php-shield][php-url]]
+* [![MySQL][sql-shield][sql-url]]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
