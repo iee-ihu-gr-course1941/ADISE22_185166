@@ -1,12 +1,12 @@
 <!-- Changelog Title -->
 # Changelog
-> Newly created elements will be marked with a [add-shield]
+> Newly created elements will be marked with a [![ADD][add-shield]]
 
 
-> Changed elements will be marked with a [change-shield]
+> Changed elements will be marked with a ![CHANGE][change-shield]
 
 
-> Removed elements will be marked with a [remove-shield]
+> Removed elements will be marked with a ![REMOVE][remove-shield]
 
 <!-- Changelog Version -->
 ## v0.0.1
