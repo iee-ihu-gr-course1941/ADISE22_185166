@@ -66,6 +66,8 @@ Below you will see a list of the languages I used in order to complete the proje
 
 - [x] Add Changelog
 - [x] Dynamic creation of tables within the database
+- [x] Dynamic drop of tables after game end or restart
+- [x] Implementation of all cards (Rank, Suit)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
