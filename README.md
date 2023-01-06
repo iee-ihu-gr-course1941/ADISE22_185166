@@ -65,6 +65,7 @@ Below you will see a list of the languages I used in order to complete the proje
 ## Roadmap
 
 - [x] Add Changelog
+- [x] Dynamic creation of tables within the database
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
