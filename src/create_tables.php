@@ -1,7 +1,13 @@
 <?php
+require_once "db_cred.php";
+
+$username = $DB_USERNAME;
+$password = $DB_PASSWORD;
+$host = $DB_HOST;
+$dbname = $DB_NAME;
 
 // Connect to the database
-$db = new mysqli('it185166@users.iee.ihu.gr:L3333', 'username', 'password', 'adise185166');
+$db = new mysqli($host, $username, $password, $dbname);
 
 // Error Check
 if ($db->connect_errno > 0) {
