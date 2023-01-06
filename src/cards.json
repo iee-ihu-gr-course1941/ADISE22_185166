@@ -50,5 +50,5 @@
     { "rank": "10", "suit": "Diamond" },
     { "rank": "Jack", "suit": "Diamond" },
     { "rank": "Queen", "suit": "Diamond" },
-    { "rank": "King", "suit": "Diamond" },
+    { "rank": "King", "suit": "Diamond" }
 ]
