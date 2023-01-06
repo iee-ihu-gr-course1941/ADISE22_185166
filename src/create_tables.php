@@ -1,7 +1,7 @@
 <?php
 
 // Connect to the database
-$db = new mysqli('localhost', 'username', 'password', 'database_name');
+$db = new mysqli('it185166@users.iee.ihu.gr:L3333', 'username', 'password', 'adise185166');
 
 // Error Check
 if ($db->connect_errno > 0) {
