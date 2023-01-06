@@ -19,6 +19,7 @@
 - Added a new php file **db_cred.php** *[06/JAN/2023]* ![ADD][add-shield]
 - Hid the credentials in **create_tables.php** *[06/JAN/2023]* ![CHANGE][change-shield]
 - Added the .gitignore file **.gitignore** *[06/JAN/2023]* ![ADD][add-shield]
+- Added a new json file **cards.json** *[06/JAN/2023]* ![ADD][add-shield]
 
 <!-- Feature Removal -->
 ### Removed
