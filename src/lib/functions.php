@@ -136,6 +136,34 @@ function startNewGame($db) {
     updateDatabase($db, $player2Cards);
 }
 
+# Playing the Game
 
+function playTurn($db, $playerNumber) {
+    # We retrieve the player's cards from the database
+    $sql = "SELECT * FROM cards WHERE location = 'player$playerNumber'";
+    $result = $db->query($sql);
+    $cards = $result->fetch_all(MYSQLI_ASSOC);
+
+    # We tell the player to make a choice
+    echo "Player $playerNumber, choose a card to play: \n";
+    $i = 1;
+    foreach ($cards as $card) {
+        echo "$i: {$card['rank']} of {$card['suit']} ({$card['points']} points)\n";
+        $i++;
+    }
+
+    # We get the player's choice
+    $choice = readline("Enter the number of the card you want to play: ");
+    $choice--; # We decrement the choice because arrays are 0-indexed
+
+    # We save the card that the player chose
+    $card = $cards[$choice];
+
+    # We update the database to save the card that was played
+    $sql = "UPDATE cards SET location = 'played' WHERE id = {$card['id']}";
+    $db->query($sql);
+
+    return $card;
+}
 
 ?>
