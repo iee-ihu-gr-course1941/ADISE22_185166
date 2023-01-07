@@ -76,6 +76,21 @@ function setName($db, $player) {
     echo "Welcome to the game, $name!\n";
 }
 
+# Dealing the cards function
+function dealCards($db) {
+    # We will retrieve the shuffled deck from the database
+    $sql = "SELECT * FROM cards";
+    $result = $db->query($sql);
+    $cards = $result->fetch_all(MYSQLI_ASSOC);
+
+    # We deal the cards while cutting them in two halves
+    $player1Cards = array_slice($cards, 0, 26);
+    $player2Cards = array_slice($cards, 26);
+
+    # We need to update the database
+    updateDatabase($db, $player1Cards, "player1");
+    updateDatabase($db, $player2Cards, "player2");
+}
 
 
 
@@ -99,6 +114,9 @@ function initializeGame($db) {
     # Asking for the player's name
     setName($db, 1);
     setName($db, 2);
+
+    # We deal the cards
+    dealCards($db);
 }
 
 
