@@ -94,7 +94,8 @@ if ($result->num_rows == 0) {
         id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
         rank CHAR(2) NOT NULL,
         suit CHAR(1) NOT NULL,
-        location VARCHAR(255) NOT NULL
+        location VARCHAR(255) NOT NULL,
+        points DOUBLE NOT NULL
     )";
 
     if (!$result = $db->query($sql)) {
