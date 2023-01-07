@@ -43,8 +43,6 @@ function updateDatabase($db, $cards) {
 }
 
 
-
-
 function shuffleCards($db) {
     # We are taking the json file that contains the cards
     # We then decode it
@@ -67,7 +65,16 @@ function shuffleCards($db) {
     return $cards;
 }
 
-
+# Setting player names
+function setName($db, $player) {
+    echo "Enter your name: ";
+    $name = readline();
+    $sql = "UPDATE players SET name = '$name' WHERE id = $player";
+    if (!$result = $db->query($sql)){
+        die('There was an error running the query [' . $db->error . ']');
+    }
+    echo "Welcome to the game, $name!\n";
+}
 
 
 
@@ -77,7 +84,7 @@ function shuffleCards($db) {
 
 
 
-# Game initialization
+# Game Set-up
 function initializeGame($db) {
     # Prior to dealing, we need to shuffle the cards
     # We use the shuffleCards function to do that
@@ -88,7 +95,27 @@ function initializeGame($db) {
 
     # Creating the tables once this function is ran
     include 'create_tables.php';
+
+    # Asking for the player's name
+    setName($db, 1);
+    setName($db, 2);
 }
+
+
+function startNewGame($db) {
+    # Prior to dealing, we need to shuffle the cards
+    # We use the shuffleCards function to do that
+    $cards = shuffleCards($db);
+
+    # We will deal the cards to the players
+    $player1Cards = array_slice($cards, 0, 26);
+    $player2Cards = array_slice($cards, 26);
+
+    # We will update the database with the latest changes
+    updateDatabase($db, $player1Cards);
+    updateDatabase($db, $player2Cards);
+}
+
 
 
 ?>
