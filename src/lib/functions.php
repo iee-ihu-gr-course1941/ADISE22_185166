@@ -24,6 +24,10 @@ function updateDatabase($db, $cards) {
     }
 
     # Adding new data to the database
+    $rank = "";
+    $suit = "";
+    $location = "";
+
     $sql = "INSERT INTO cards (rank, suit, location) VALUES (?, ?, ?)";
     $stmt = $db->prepare($sql);
     $stmt->bind_param("sss", $rank, $suit, $location);
@@ -50,17 +54,17 @@ function shuffleCards($db) {
     # We will shuffle the cards via the shuffle function
     shuffle($cards);
 
-    # We finally return the shuffled deck of cards
-    return $cards;
-
     # We deal the cards to the players
     # We slice the deck in two halves
     $player1Cards = array_slice($cards, 0, 26);
     $player2Cards = array_slice($cards, 26);
 
     # We will update the database with new card locations
-    updateDatabase($db, $player1Cards, "player1");
-    updateDatabase($db, $player2Cards, "player2");
+    updateDatabase($db, $player1Cards);
+    updateDatabase($db, $player2Cards);
+    
+    # We finally return the shuffled deck of cards
+    return $cards;
 }
 
 
