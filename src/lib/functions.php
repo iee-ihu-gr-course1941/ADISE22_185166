@@ -41,7 +41,7 @@ function updateDatabase($db, $cards) {
 
 
 
-function shuffleCards() {
+function shuffleCards($db) {
     # We are taking the json file that contains the cards
     # We then decode it
     $json = file_get_contents('cards.json');
@@ -52,6 +52,15 @@ function shuffleCards() {
 
     # We finally return the shuffled deck of cards
     return $cards;
+
+    # We deal the cards to the players
+    # We slice the deck in two halves
+    $player1Cards = array_slice($cards, 0, 26);
+    $player2Cards = array_slice($cards, 26);
+
+    # We will update the database with new card locations
+    updateDatabase($db, $player1Cards, "player1");
+    updateDatabase($db, $player2Cards, "player2");
 }
 
 
@@ -64,22 +73,17 @@ function shuffleCards() {
 
 
 
-
 # Game initialization
-function initializeGame() {
+function initializeGame($db) {
     # Prior to dealing, we need to shuffle the cards
     # We use the shuffleCards function to do that
-    $deck = shuffleCards();
-
-    # We deal the cards to the players
-    # We slice the deck in two halves
-    $player1Cards = array_slice($deck, 0, 26);
-    $player2Cards = array_slice($deck, 26);
+    $cards = shuffleCards($db);
 
     # We update everything in the database with the updateDatabase function
-    updateDatabase($player1Cards, $player2Cards);
+    updateDatabase($db, $cards);
 
-
+    # Creating the tables once this function is ran
+    include 'create_tables.php';
 }
 
 
