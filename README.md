@@ -68,6 +68,8 @@ Below you will see a list of the languages I used in order to complete the proje
 - [x] Dynamic creation of tables within the database
 - [x] Dynamic drop of tables after game end or restart
 - [x] Implementation of all cards (Rank, Suit)
+- [x] Implementation of a function library
+- [x] Creation of the first game logic
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
