@@ -19,7 +19,7 @@ $db = new mysqli("localhost", "root", "password", "test");
 # Error Check
 if ($db->connect_errno > 0){
     die('Connection Error: Unable to reach the database [' . $db->connect_error . ']');
-
-
-
 }
+
+
+?>
