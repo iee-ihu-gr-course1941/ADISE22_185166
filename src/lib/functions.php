@@ -27,15 +27,17 @@ function updateDatabase($db, $cards) {
     $rank = "";
     $suit = "";
     $location = "";
+    $points = 0;
 
-    $sql = "INSERT INTO cards (rank, suit, location) VALUES (?, ?, ?)";
+    $sql = "INSERT INTO cards (rank, suit, location, points) VALUES (?, ?, ?, ?)";
     $stmt = $db->prepare($sql);
-    $stmt->bind_param("sss", $rank, $suit, $location);
+    $stmt->bind_param("sssd", $rank, $suit, $location, $points);
 
     foreach ($cards as $card) {
         $rank = $card['rank'];
         $suit = $card['suit'];
         $location = $card['location'];
+        $points = $card['points'];
         $stmt->execute();
     }
 
@@ -88,8 +90,8 @@ function dealCards($db) {
     $player2Cards = array_slice($cards, 26);
 
     # We need to update the database
-    updateDatabase($db, $player1Cards, "player1");
-    updateDatabase($db, $player2Cards, "player2");
+    updateDatabase($db, $player1Cards);
+    updateDatabase($db, $player2Cards);
 }
 
 
