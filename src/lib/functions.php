@@ -123,17 +123,40 @@ function initializeGame($db) {
 
 
 function startNewGame($db) {
-    # Prior to dealing, we need to shuffle the cards
-    # We use the shuffleCards function to do that
-    $cards = shuffleCards($db);
+    # We initialize a new game
+    initializeGame($db);
 
-    # We will deal the cards to the players
-    $player1Cards = array_slice($cards, 0, 26);
-    $player2Cards = array_slice($cards, 26);
+    # We set initial scores to the players
+    $player1score = 0;
+    $player2score = 0;
 
-    # We will update the database with the latest changes
-    updateDatabase($db, $player1Cards);
-    updateDatabase($db, $player2Cards);
+    # We save the current player
+    $currentPlayer = 1;
+
+    # We loop until the game is over
+    while(true) {
+        # We get the card played
+        $card = playTurn($db, $currentPlayer);
+
+        # We update the score
+        if ($currentPlayer == 1){
+            $player1score += $card['points'];
+        } else {
+            $player2score += $card['points'];
+        }
+
+        # We check if the game is over
+        if ($player1score >= 100) {
+            echo "Player 1 wins!\n";
+            break;
+        } else if ($player2score >= 100) {
+            echo "Player 2 wins!\n";
+            break;
+        }
+
+        # We change the turn of the player
+        $currentPlayer = 3 - $currentPlayer;
+    }
 }
 
 # Playing the Game
