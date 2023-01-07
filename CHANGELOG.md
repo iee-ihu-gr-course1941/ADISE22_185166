@@ -9,7 +9,7 @@
 > Removed elements will be marked with a ![REMOVE][remove-shield]
 
 <!-- Changelog Version -->
-## v0.0.6
+## v0.0.9
 
 <!-- Feature Additions and Enhancements-->
 ### Added or Changed
@@ -20,6 +20,8 @@
 - Hid the credentials in **create_tables.php** *[06/JAN/2023]* ![CHANGE][change-shield]
 - Added the .gitignore file **.gitignore** *[06/JAN/2023]* ![ADD][add-shield]
 - Added a new json file **cards.json** *[06/JAN/2023]* ![ADD][add-shield]
+- Added a new php file **functions.php** *[07/JAN/2023]* ![ADD][add-shield]
+- Added a new php file **game.php** *[07/JAN/2023]* ![ADD][add-shield]
 
 <!-- Feature Removal -->
 ### Removed
